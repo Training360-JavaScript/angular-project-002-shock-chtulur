@@ -6,7 +6,6 @@ import { UserService } from './service/user.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  providers: [UserService],
 })
 
 //
@@ -25,7 +24,6 @@ export class AppComponent {
   }
   onUpdateClick(oneUser: User): void {
     this.us.updateUser(oneUser);
-    console.log(oneUser);
   }
   onDeleteClick(oneUser: User): void {
     this.us.removeUser(oneUser);

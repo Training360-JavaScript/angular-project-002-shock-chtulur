@@ -13,7 +13,7 @@ import { ActionButtonGroupComponent } from './common/action-button-group/action-
 import { DataCellComponent } from './common/data-cell/data-cell.component';
 import { DataRowComponent } from './common/data-row/data-row.component';
 import { DataListComponent } from './common/data-list/data-list.component';
-
+import { UserService } from './service/user.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +29,7 @@ import { DataListComponent } from './common/data-list/data-list.component';
     DataListComponent,
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

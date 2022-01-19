@@ -2,11 +2,11 @@
   <div
     class="col-12 mb-1 pt-1 pb-1 d-flex justify-content-between align-items-center"
   >
-    <app-data-cell [key]="'id'" [data]="dataRow"></app-data-cell>
-    <app-data-cell [key]="'name'" [data]="dataRow"></app-data-cell>
-    <app-data-cell [key]="'email'" [data]="dataRow"></app-data-cell>
-    <app-data-cell [key]="'address'" [data]="dataRow"></app-data-cell>
-    <app-data-cell [key]="'active'" [data]="dataRow"></app-data-cell>
+    <app-data-cell key="id" [data]="dataRow"></app-data-cell>
+    <app-data-cell key="name" [data]="dataRow"></app-data-cell>
+    <app-data-cell key="email" [data]="dataRow"></app-data-cell>
+    <app-data-cell key="address" [data]="dataRow"></app-data-cell>
+    <app-data-cell key="active" [data]="dataRow"></app-data-cell>
     <app-action-button-group
       (deleteClick)="onDeleteClicked(dataRow)"
       (selectClick)="onSelectClicked(dataRow)"
